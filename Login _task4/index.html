@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div id="loginContainer" class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" autocomplete="off" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" autocomplete="off" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+            </div>
+
+            <div id="registerContainer" class="form-container" style="display: none;">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" autocomplete="off" required>
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" autocomplete="off" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://ursignguy.com/wp-content/uploads/2023/02/login.png" alt="Illustration" class="illustration">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
